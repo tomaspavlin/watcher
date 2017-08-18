@@ -1,0 +1,6 @@
+http://www.ulovdomov.cz/fe-api/find
+
+
+{"query":"Praha 4","offer_type_id":"1","dispositions":["5","6","7","8"],"price_from":"","price_to":"13000","acreage_from":"","acreage_to":"","added_before":"","furnishing":[],"conveniences":[],"is_price_commision_free":null,"sort_by":"","page":1,"limit":20,"bounds":{"north_east":{"lng":14.491854122302243,"lat":50.06409226671265},"south_west":{"lng":14.425850322863766,"lat":50.03080194119657}},"is_banner_premium_board":true,"is_banner_premium_board_brno":false,"test_1":null,"test_2":null}
+
+
