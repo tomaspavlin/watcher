@@ -19,7 +19,7 @@ class BezrealitkyWatcher(watcher.Watcher):
 
 
 	def getItems(self):
-		data = self.getJSON()
+		data = self.postJSON()
 		if not "squares" in data or len(data['squares']) == 0:
 			return []	
 
