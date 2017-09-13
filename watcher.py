@@ -8,6 +8,9 @@ import urllib2
 import requests
 import smtplib
 import json
+#import ssl
+import urllib3.contrib.pyopenssl
+
 
 try: 
     from BeautifulSoup import BeautifulSoup
@@ -16,6 +19,9 @@ except ImportError:
 
 
 from email.mime.text import MIMEText
+
+# HACK
+#ssl._create_default_https_context = ssl._create_unverified_context
 
 class Watcher:
 	name = ""
@@ -107,6 +113,7 @@ class Watcher:
 	def postJSON(self):
 		url = self._getURL()
 		d = self._getData()
+		#gcontext = ssl.SSLContext(ssl.PROTOCOL_TLSv1) #...
 		r = requests.post(url, json=d)
 		data = json.loads(r.text)
 		return data
